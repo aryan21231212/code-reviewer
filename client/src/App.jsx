@@ -20,7 +20,7 @@ const App = () => {
   },[])
 
   async function  codeReviewer(){
-            const response = await axios.post("http://localhost:3000/reviewer",
+            const response = await axios.post("https://code-reviewer-3-hc6h.onrender.com/reviewer",
               {
                 code
               }
