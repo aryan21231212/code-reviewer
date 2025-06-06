@@ -87,7 +87,7 @@ const Container = styled.div`
 
     @media (max-width: 768px) {
       flex-direction: column;
-      height: auto;
+      height: 50%;
     }
   }
 
@@ -102,7 +102,7 @@ const Container = styled.div`
 
     @media (max-width: 768px) {
       width: 100%;
-      height: auto;
+      height: 50%;
     }
   }
 
