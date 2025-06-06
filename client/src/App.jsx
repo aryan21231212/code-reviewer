@@ -77,16 +77,21 @@ const Container = styled.div`
   min-height: 100vh;
   width: 100%;
 
-  .main{
+  .main {
     height: 100vh;
     width: 100%;
     display: flex;
-    background-color:grey;
+    background-color: grey;
     padding: 1rem;
     gap: 5px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: auto;
+    }
   }
 
-  .left{
+  .left {
     height: 100%;
     width: 50%;
     background-color: black;
@@ -94,16 +99,27 @@ const Container = styled.div`
     padding: 1rem;
     color: white;
     position: relative;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
   }
-  .right{
+
+  .right {
     height: 100%;
     width: 50%;
     background-color: #434343;
     border-radius: 0.7rem;
     padding: 1rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
   }
 
-  .review{
+  .review {
     position: absolute;
     bottom: 1.5rem;
     right: 2rem;
@@ -116,17 +132,21 @@ const Container = styled.div`
     user-select: none;
     cursor: pointer;
     border: none;
+
+    @media (max-width: 768px) {
+      position: static;
+      margin-top: 1rem;
+    }
   }
 
-  .code{
-    height: 100% ;
+  .code {
+    height: 100%;
   }
 
-  .right{
+  .right {
     color: white;
     padding: 1rem 2rem;
     font-size: 1.2rem;
     overflow: auto;
   }
-
 `
